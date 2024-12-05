@@ -82,6 +82,7 @@ main::before {
     }
     .points{
         padding: 0;
+        margin-top:40px;
     }
     .brand{
         margin-top:50px;
