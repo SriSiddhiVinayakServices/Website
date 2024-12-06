@@ -18,14 +18,16 @@ body {
 /* Header Styles */
 header {
     height: 15vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
     color: white;
     padding: 20px 0;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size:3.5vw;
     margin: 0;
 }
 
@@ -61,33 +63,35 @@ main::before {
 
 }
 .points{
-    padding:50px;
+    padding:4vw;
     font-size: 1.5rem;
 }
 
 .brand{
-    margin-top: 80px;
+    margin-top: 3vw;
     display: flex;
     justify-content: space-around;
-    height:15vh;
-    gap:50px;
+    height:7vw;
+}
+img:hover{
+    filter: drop-shadow(0 0 30px rgba(0, 255, 0, 0.8));
+
 }
 /* Making the layout responsive */
 @media (max-width: 768px) {
+    header{
+     padding:10px;
+    }
     h1 {
-        font-size: 2em;
+        font-size: 4.5vw;
     }
-    p {
-        font-size: 1em;
+}
+
+@media (max-width: 400px) {
+    header{
+     padding:0px;
     }
-    .points{
-        padding: 0;
-        margin-top:40px;
-    }
-    .brand{
-        margin-top:50px;
-        display: flex;
-        justify-content:flex-start;
-        height:3vh;
+    h1 {
+        font-size: 7vw;
     }
 }
