@@ -6,7 +6,12 @@
 }
 
 .tabs a:hover,.tabs p:hover{
-    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    animation: glowAnimation 0.3s forwards;
+    
+}
+@keyframes glowAnimation {
+    0%{text-shadow: 0 0 10px white}
+    100%{text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;}
 }
 
 body {
@@ -47,12 +52,17 @@ h1 {
 /* Main content area with a responsive background image */
 main {
     flex-grow: 1;
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210609/pngtree-3d-render-online-shopping-with-mobile-and-bag-image_727266.jpg');
+    background-image: url('https://media.istockphoto.com/id/828612322/photo/kraft-paper-texture-for-wraping.jpg?s=612x612&w=0&k=20&c=ELG4gCOPpHeE2aW4B2KZr_z54xu2A3OpyaHx0RZTmhQ=');
     background-size:cover;
     background-position: top;
     background-attachment: fixed;
     position: relative;
 }
+
+.phone{
+    display: none;
+}
+
 
 /* Adding a low opacity overlay */
 main::before {
@@ -62,7 +72,7 @@ main::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(50, 50, 50, 0.5); /* Black with 50% opacity */
+    background-color: rgba(100,100,100, 0.5); /* Black with 50% opacity */
     z-index: 1;
 }
 
@@ -71,7 +81,7 @@ main::before {
     z-index: 2;
     color: white;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     padding: 20px;
 
 }
@@ -79,6 +89,27 @@ main::before {
     padding:4vw;
     font-size: 1.5rem;
 }
+
+.slide{
+    margin-top:2vw;
+    padding:2vw;
+}
+
+.slider{
+    display:flex;
+    overflow:scroll;
+    scrollbar-width: none;
+}
+
+.slider img{
+    padding:2vw;
+    height:25vw;
+}
+
+.slider img:hover{
+    filter:none;
+}
+
 
 .brand{
     display: flex;
@@ -103,13 +134,92 @@ img:hover{
     h1 {
         font-size: 4.5vw;
     }
+    .slide{
+        margin-top: 5vw;
+    }
+    .slider img{
+        padding:3vw;
+        height:40vw;
+    }
 }
 
 @media (max-width: 450px) {
     header{
-     padding:0px;
+     padding:5px;
+    }
+    .tabs{
+        display: none;
+    }
+    .phone{
+        display:flex;
+        justify-content: space-around;
+        padding-top: 3vw;
+        font-size: 4vw;
+    }
+    .mh{
+        border-bottom: 3px solid #f0f0f0;
+    }
+    .slider img{
+        padding:5vw;
+        height:60vw;
     }
     h1 {
         font-size: 7vw;
     }
+
+    .slide{
+        margin-top: 5vw;
+    }
+
+    /* Basic Styling for the Dropdown Menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Style for the dropdown button */
+    .dropdown button {
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text */
+        padding: 10px 20px; /* Padding around the text */
+        font-size: 16px; /* Text size */
+        border: none; /* Remove border */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Change the button color when hovered */
+    .dropdown button:hover {
+        background-color: #45a049; /* Darker green */
+    }
+
+    /* Dropdown Content (Hidden by default) */
+    .dropdown-content {
+        display: none; /* Hidden by default */
+        position: absolute; /* Position it below the button */
+        background-color: #f9f9f9; /* Light background */
+        min-width: 160px; /* Minimum width */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
+        z-index: 3; /* Ensure it appears above other elements */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Style for the links inside the dropdown */
+    .dropdown-content a {
+        color: black; /* Black text */
+        padding: 12px 16px; /* Padding */
+        text-decoration: none; /* Remove underline */
+        display: block; /* Make the links block-level */
+    }
+
+    /* Change the color of the links when hovered */
+    .dropdown-content a:hover {
+        background-color: #ddd; /* Light gray on hover */
+    }
+
+    /* Style for the dropdown when active on mobile */
+    .dropdown.active .dropdown-content {
+        display: block; /* Show content when active */
+    }
+
 }

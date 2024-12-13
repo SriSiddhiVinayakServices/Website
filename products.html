@@ -9,6 +9,20 @@
 <body>
     <header>
         <h1 class="mh">Sri Siddhi Vinayak Services</h1>
+        <div class="phone">
+            <div class="dropdown">
+                <button onclick="toggleDropdown()">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="location.html">Location</a>
+                </div>
+            </div>
+            <div class="phone" style="border-top: none;">
+                <img src="Call_icon.png" style="height: 5vw;"/>
+                <p>..Call us at +919776311111</p>
+            </div>
+        </div>
         <div class="tabs">
             <a href="index.html" style="font: normal; text-decoration: none; color: inherit;">Home</a>
             <a href="products.html" style="font: normal; text-decoration: none; color: inherit;">Products</a>
@@ -34,4 +48,11 @@
         </div>
     </main>
 </body>
+<script>
+    function toggleDropdown() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('active');
+        console.log("HELLO WORLD");
+    }
+</script>
 </html>

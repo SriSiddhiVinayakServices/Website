@@ -8,6 +8,10 @@
     <title>Simple Map</title>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
+    function toggleDropdown() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('active');
+    }
       function initMap() {
         var location = {lat: -34.397, lng: 150.644}; // Latitude and Longitude
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -24,6 +28,20 @@
 <body>
     <header>
         <h1 class="mh">Sri Siddhi Vinayak Services</h1>
+        <div class="phone">
+            <div class="dropdown">
+                <button onclick="toggleDropdown()">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="location.html">Location</a>
+                </div>
+            </div>
+            <div class="phone" style="border-top: none;">
+                <img src="Call_icon.png" style="height: 5vw;"/>
+                <p>..Call us at +919776311111</p>
+            </div>
+        </div>
         <div class="tabs">
             <a href="index.html" style="font: normal; text-decoration: none; color: inherit;">Home</a>
             <a href="products.html" style="font: normal; text-decoration: none; color: inherit;">Products</a>
@@ -36,7 +54,7 @@
     </header>
     <main>
         <div class="content">   
-            <h3>My Google Map</h3>
+            <h3>Our location on Google Maps</h3>
             <div id="map" style="height: 500px; width: 100%;"></div>
         </div>
     </main>
