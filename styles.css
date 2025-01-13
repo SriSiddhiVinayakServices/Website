@@ -52,7 +52,7 @@ h1 {
 /* Main content area with a responsive background image */
 main {
     flex-grow: 1;
-    background-image: 'pexels-alesiakozik-7911703.jpg';
+    background-image: "pexels-alesiakozik-7911703.jpg";
     background-size:cover;
     background-position: top;
     background-attachment: fixed;
