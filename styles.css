@@ -52,7 +52,7 @@ h1 {
 /* Main content area with a responsive background image */
 main {
     flex-grow: 1;
-    background-image: url('https://media.istockphoto.com/id/828612322/photo/kraft-paper-texture-for-wraping.jpg?s=612x612&w=0&k=20&c=ELG4gCOPpHeE2aW4B2KZr_z54xu2A3OpyaHx0RZTmhQ=');
+    background-image: 'pexels-alesiakozik-7911703.jpg';
     background-size:cover;
     background-position: top;
     background-attachment: fixed;
