@@ -1,58 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Siddhi Vinayak Services</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Sri Siddhi Vinayak Services</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-        <h1 class="mh">Sri Siddhi Vinayak Services</h1>
-        <div class="phone">
-            <div class="dropdown">
-                <button onclick="toggleDropdown()">Menu</button>
-                <div class="dropdown-content">
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Products</a>
-                    <a href="location.html">Location</a>
-                </div>
-            </div>
-            <div class="phone" style="border-top: none;">
-                <img src="Call_icon.png" style="height: 5vw;"/>
-                <p>..Call us at +919776311111</p>
-            </div>
-        </div>
-        <div class="tabs">
-            <a href="index.html" style="font: normal; text-decoration: none; color: inherit;">Home</a>
-            <a href="products.html" style="font: normal; text-decoration: none; color: inherit;">Products</a>
-            <a href="location.html" style="font: normal; text-decoration: none; color: inherit;">Location</a>
-            <div class="tabs" style="border-top: none;">
-                <img src="Call_icon.png" style="height: 2vw;"/>
-                <p>..Call us at +919776311111</p>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="content">   
-                <p>Mobile Phones and Accessories of All <b>Major Brands</b> are Available!!! </p>
-                <div class="brand">
-                    <img class="brandn" src="oneplus.png"/>
-                    <img class="brandn" src="samsung.png"/>
-                    <img class="brandn" src="oppo.png"/>
-                    <img class="brandn" src="realme.png"/>
-                    <img class="brandn" src="vivo.png"/>
-                    <img class="brandn" src="mi.png"/>
-                </div>
-                <p></p>
-        </div>
-    </main>
+  <div class="header">
+    <img src="media/products/logo.png" class="fit" />
+    <a href="index.html" class="link">Home</a>
+    <a href="products.html" class="link">Products</a>
+    <a href="location.html" class="link">Location</a>
+  </div>
+
+  <div class="anim">
+    <p style="font-size: 1.2rem;padding-left:3vw;margin-top:2rem;">In Mobiles:-</p>
+    <div class="listt">
+      <div class="card">
+        <img src="media/products/oppo.png" />
+        <p>Starting from 9499/-</p>
+      </div>
+      <div class="card">
+        <img src="media/products/realme.png" />
+        <p>Starting from 12999/-</p>
+      </div>
+      <div class="card">
+        <img src="media/products/oneplus.png" />
+        <p>Starting from 19999/-</p>
+      </div>
+      <div class="card">
+        <img src="media/products/nothing.png" />
+        <p>Starting from 16999/-</p>
+      </div>
+      <div class="card">
+        <img src="media/products/redmi.png" />
+        <p>Starting from 7999/-</p>
+      </div>
+      <div class="card">
+        <img src="media/products/vivo.png" />
+        <p>Starting from 12999/-</p>
+      </div>
+    </div>
+
+    <p style="font-size: 1.2rem;padding-left:3vw;margin-top:2rem;">Common Accessories:-</p>
+    <div class="listt">
+      <div class="card" style="background-color: beige; padding: 1vw;min-width:200px;">
+        <p style="font-weight: bold;">Charging Cable and Adapter</p>
+        <p>All types(C type, Micro USB, Iphone, M600) are available.</p>
+      </div>
+      <div class="card" style="background-color: beige; padding: 1vw;min-width:200px;">
+        <p style="font-weight: bold;">Headphones</p>
+        <p>Both wireless(neckband, earpods and headphones) and wired earphones are available.</p>
+      </div>
+      <div class="card" style="background-color: beige; padding: 1vw;min-width:200px;">
+        <p style="font-weight: bold;">Storage Devices and Battery</p>
+        <p>Memory Cards, Pen Drives, Power Banks of multiple variations are available.</p>
+      </div>
+      <div class="card" style="background-color: beige; padding: 1vw;min-width:200px;">
+        <p style="font-weight: bold;">Connectors</p>
+        <p>C to B, B to C, all types OTG, 3.5mm Jack to all types are available.</p>
+      </div>
+      <div class="card" style="background-color: beige; padding: 1vw;min-width:200px;">
+        <p style="font-weight: bold;">Others</p>
+        <p>Explore more products like tripod, selfie stick, mic, mouse, keyboard and even more in our store.</p>
+      </div>
+    </div>
+  </div>
+
 </body>
-<script>
-    function toggleDropdown() {
-        var dropdown = document.querySelector('.dropdown');
-        dropdown.classList.toggle('active');
-        console.log("HELLO WORLD");
-    }
-</script>
 </html>
