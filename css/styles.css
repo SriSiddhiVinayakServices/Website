@@ -251,7 +251,7 @@ body form p {
     filter:none;
 }
 /* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .fit{
     height: 3vh;
   }
@@ -280,7 +280,7 @@ body form p {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header {
     padding: 0.2rem 0.2rem; /* add a bit more horizontal padding */
     gap:1.2rem;
