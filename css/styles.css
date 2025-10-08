@@ -289,3 +289,12 @@ body form p {
     font-size: 0.85rem;
   }
 }
+
+@media (max-width:380px){
+  .header {
+    gap:0.5rem;
+  }
+  .header *{
+    font-size: 0.8rem;
+  }
+}
