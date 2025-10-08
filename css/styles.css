@@ -55,7 +55,7 @@ body form p {
   background-color: #1f1f1f;
   height:5vh;
   display: flex;
-  justify-content: left;
+  justify-content: start;
   gap:2rem;
   padding: 1rem 2rem;
   align-items: center;
